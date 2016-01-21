@@ -1,0 +1,16 @@
+{
+  "development": {
+    "database": "mission_hacks_development",
+    "dialect": "postgres",
+    "host": "127.0.0.1"
+  },
+  "test": {
+    "database": "mission_hacks_test",
+    "dialect": "postgres",
+    "host": "127.0.0.1",
+    "logging": false
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL"
+  }
+}

@@ -1,0 +1,60 @@
+input AuthenticateViewerInput {
+  emailAddressOrUsername: String!
+  password: String!
+  clientMutationId: String!
+}
+
+type AuthenticateViewerPayload {
+  viewer: User
+  clientMutationId: String!
+}
+
+input CreateViewerInput {
+  emailAddress: String!
+  password: String!
+  username: String!
+  clientMutationId: String!
+}
+
+type CreateViewerPayload {
+  viewer: User
+  clientMutationId: String!
+}
+
+type Mutation {
+  authenticateViewer(input: AuthenticateViewerInput!): AuthenticateViewerPayload
+  createViewer(input: CreateViewerInput!): CreateViewerPayload
+  updateUser(input: UpdateUserInput!): UpdateUserPayload
+}
+
+interface Node {
+  id: ID!
+}
+
+type Query {
+  node(id: ID!): Node
+  user(id: ID, username: String): User
+  viewer: User
+}
+
+input UpdateUserInput {
+  emailAddress: String!
+  firstName: String
+  id: ID!
+  lastName: String
+  clientMutationId: String!
+}
+
+type UpdateUserPayload {
+  updatedUser: User
+  clientMutationId: String!
+}
+
+type User implements Node {
+  id: ID!
+  authToken: String
+  emailAddress: String
+  firstName: String
+  lastName: String
+  username: String
+}

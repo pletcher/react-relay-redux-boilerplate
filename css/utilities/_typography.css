@@ -1,0 +1,5 @@
+@import 'system-font';
+
+body {
+  font-family: system;
+}

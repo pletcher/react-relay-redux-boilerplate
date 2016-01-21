@@ -1,0 +1,35 @@
+@import "../node_modules/basscss/css/basscss.css";
+@import "utilities/typography";
+
+.btn-primary {
+  background-color: var(--blue);
+}
+
+.btn-primary.is-disabled {
+  cursor: default;
+}
+
+:root {
+  --black: #222222;
+  --blue: #116DB8;
+  --charcoal: #444851;
+  --gray: #A3A6AD;
+  --green: #93B945;
+  --orange: #FF6846;
+  --silver: #DEE0E3;
+  --smoke: #FAF9F8;
+  --white: #FFFFFF;
+  --yellow: #F9C933;
+
+  --darken-1: #00000010;
+  --darken-2: #00000020;
+  --darken-3: #00000040;
+  --darken-4: #00000080;
+
+  --lighten-1: #FFFFFF10;
+  --lighten-2: #FFFFFF20;
+  --lighten-3: #FFFFFF40;
+  --lighten-4: #FFFFFF80;
+
+   --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
