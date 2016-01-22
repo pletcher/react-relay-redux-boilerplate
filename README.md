@@ -28,7 +28,7 @@ $ git clone git@github.com:[YOUR_USERNAME]/react-relay-redux-boilerplate.git
 $ cd react-relay-redux-boilerplate
 $ npm install
 $ npm run db:migrate
-$ npm test ;; only if you really want to
+$ npm test # only if you really want to
 $ npm run dev
 ```
 
