@@ -14,19 +14,19 @@ export default class LandingPage extends Component {
         <div className="mx-auto p4 sm-flex">
           <div className="border sm-col-4 flex flex-auto flex-center mr2" style={{ minHeight: 140 }}>
             <span className="center h4 mx-auto regular">
-              Learn a new skill
+              Something awesome
             </span>
           </div>
 
           <div className="border sm-col-4 flex flex-auto flex-center mr2" style={{ minHeight: 140 }}>
             <span className="center h4 mx-auto regular">
-              Gain real-world experience
+              Something awesomer
             </span>
           </div>
 
           <div className="border sm-col-4 flex flex-auto flex-center mr2" style={{ minHeight: 140 }}>
             <div className="center h4 mx-auto regular">
-              Teach others what you know
+              Something awesomest
             </div>
           </div>
         </div>

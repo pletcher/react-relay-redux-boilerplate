@@ -15,11 +15,28 @@ It goes without saying, but all of the dependencies are the sole intellectual pr
 - [React Relay Router](https://github.com/relay-tools/react-router-relay): Based on the awesome [React Router](https://github.com/rackt/react-router)
 - [Webpack](https://github.com/webpack/webpack): I'd love to get [hot module reloading](https://github.com/gaearon/react-transform-hmr) working again.
 
-# LICENSE
+Also, [Basscss](http://www.basscss.com/) is the honest-to-goodness shit.
+
+# Can I use it?
+
+Sure, but it's not production-ready. You'll need to update `index.js` and `webpack.config.js` according to your production needs. (I'm working on figuring out what _my_ production needs are, and will update those files accordingly once I have some idea.)
+
+Just fork and run the following and you should be good to go:
+
+```
+$ git clone git@github.com:[YOUR_USERNAME]/react-relay-redux-boilerplate.git
+$ cd react-relay-redux-boilerplate
+$ npm install
+$ npm run db:migrate
+$ npm test ;; only if you really want to
+$ npm run dev
+```
+
+# License
 
 The MIT License (MIT)
 
-Copyright (c) 2016 @pletcher
+Copyright (c) 2016 Charles Pletcher
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
